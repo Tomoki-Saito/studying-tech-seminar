@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー部分 -->
+    <header>
+      <div class="header-content">
+        <h1>Portfolio</h1>
+        <button id="menuButton">Menu</button>
+        <nav id="mainNav" class="hidden">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- Hero セクション -->
+      <section id="home">
+        <div class="hero">
+          <h2>Web Developer</h2>
+          <p>フロントエンド開発に情熱を注ぐエンジニアです</p>
+          <button onclick="scrollToProjects()">プロジェクトを見る</button>
+        </div>
+      </section>
+
+      <!-- プロジェクトセクション -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="https://placehold.jp/400x300.png" alt="" />
+            <h3>ECサイト</h3>
+            <p>HTML/CSS/JavaScriptで作成したECサイト</p>
+          </div>
+          <div class="project-card">
+            <img src="https://placehold.jp/400x300.png" alt="" />
+            <h3>タスク管理アプリ</h3>
+            <p>シンプルなタスク管理ツール</p>
+          </div>
+          <div class="project-card">
+            <img src="https://placehold.jp/400x300.png" alt="" />
+            <h3>ブログサイト</h3>
+            <p>レスポンシブ対応のブログ</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- コンタクトフォーム -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <div>
+            <input type="text" placeholder="お名前" />
+          </div>
+          <div>
+            <input type="email" placeholder="メールアドレス" />
+          </div>
+          <div>
+            <textarea placeholder="メッセージ"></textarea>
+          </div>
+          <button type="submit">送信する</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+      <div class="social-links">
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Email</a>
+      </div>
+      <p>© 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
